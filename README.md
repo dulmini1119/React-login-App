@@ -21,8 +21,8 @@ To explore this project and run the login form locally, follow these steps:
    ```bash
    cd react-login-form
    
-Install dependencies:
-npm install
-Start the development server:
-npm start
-Open your web browser and go to http://localhost:3000 to view the login form.
+- Install dependencies:
+     npm install
+- Start the development server:
+     npm start
+- Open your web browser and go to http://localhost:3000 to view the login form.
