@@ -1,12 +1,23 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
-import {Login} from './login';
-import {Register} from './register';
+
+import { Login } from "./login";
+import { Register } from "./register";
 
 function App() {
+  const [showLogin, setShowLogin] = useState(true);
+
+  const handleFormSwitch = (formType) => {
+    setShowLogin(formType === 'login');
+  };
+
   return (
     <div className="App">
-      <Login />
+      {showLogin ? (
+        <Login onFormSwitch={handleFormSwitch} />
+      ) : (
+        <Register onFormSwitch={handleFormSwitch} />
+      )}
     </div>
   );
 }
